@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-11T20:54:18.477Z",
+  "deployer": "0x773613F00c4047D466E57B6ac260bd3DAb2C49E9",
+  "sepolia": {
+    "chainId": 11155111,
+    "chainSelector": "16015286601757825753",
+    "vault": "0x1cDe8FB7eF38B5b468B67e1db3e4812E33f7F06c",
+    "sherpaUSD": "0xbe9529a809c2dec031628A05cCCd354400c96171",
+    "mockUSDC": "0x03f346E161B2cD07F4B14a14F8B661f0E57AF14F",
+    "ccipRouter": "0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59",
+    "isPrimary": true,
+    "newCcipPool": "0xC3958B5fAA9468624a40863Bc2712c073C031e8F",
+    "poolType": "BurnFromMintTokenPool 1.6.1"
+  },
+  "base": {
+    "chainId": 84532,
+    "chainSelector": "10344971235874465080",
+    "vault": "0x1e1D8e5330b78c46A53B6C3322Bb854981989960",
+    "sherpaUSD": "0xf876764500aB5E980bb9459557e3c0FCf06C97E3",
+    "mockUSDC": "0x20b64A9fa5546247C31bD694eCF6E910874f4e55",
+    "ccipRouter": "0xD3b06cEbF099CE7DA4AcCf578aaebFDBd6e88a93",
+    "isPrimary": false,
+    "newCcipPool": "0x118b7f52266D7D45d9C6D7A067a143Ad84950c95",
+    "poolType": "BurnFromMintTokenPool 1.6.1"
+  },
+  "arbitrum": {
+    "chainId": 421614,
+    "chainSelector": "3478487238524512106",
+    "vault": "0x7C09F560e76EC9cC043958c8C5dBD758A2f37721",
+    "sherpaUSD": "0xeD83bC5f75f63835fE50fb0b07C775AC06C02A1e",
+    "mockUSDC": "0x7c9EEbb6A8DC30fe5fC8CBB00fe666f08eFfED12",
+    "ccipRouter": "0x2a9C5afB0d0e4BAb2BCdaE109EC4b0c4Be15a165",
+    "isPrimary": false,
+    "newCcipPool": "0xcd39f82Cdebd2c3e1C87911Da47cd2bf29354948",
+    "poolType": "BurnFromMintTokenPool 1.6.1"
+  },
+  "vaultParams": {
+    "decimals": 6,
+    "minimumSupply": "1000000",
+    "cap": "1000000000000"
+  },
+  "status": "deployed-and-operational",
+  "notes": "Complete deployment: vaults, wrappers, CCIP pools configured. Deposits enabled. System ready for users."
+}

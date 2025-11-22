@@ -1,0 +1,85 @@
+# Environment variables (CRITICAL - contains private keys)
+.env
+.env.local
+.env.*.local
+
+# Private notes (never commit)
+notes/
+
+# Temporary working files (never commit)
+tmp/
+
+# Dependencies
+node_modules/
+
+# Hardhat files
+cache/
+artifacts/
+
+# TypeScript
+*.tsbuildinfo
+
+# Linting configuration
+eslint.config.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+coverage/
+coverage.json
+
+# Hardhat
+typechain/
+typechain-types/
+
+# Operation state (runtime files, not source code)
+.operation-state/
+
+# Test user configuration (contains private keys)
+scripts/config/testUsers.js
+
+# Foundry
+cache_forge/
+out/
+lib/
+
+# Echidna fuzzer (generated files)
+echidna-corpus/
+crytic-export/
+
+# Backup files
+*.backup
+*.backup2
+deployments/backups/
+
+# Internal tracking (not for version control)
+docs/PRE-AUDIT-CHECKLIST.md
+
+# Static analysis reports (internal use only)
+reports/
+
+# Archived files (obsolete code/docs)
+archive/
+
+# Operation history (runtime logs, not for version control)
+docs/rebalances/
+docs/rolls/
+
+# State snapshots - keep latest only
+docs/state-snapshots/snapshot-[0-9]*.json
+docs/state-snapshots/snapshot-[0-9]*.txt

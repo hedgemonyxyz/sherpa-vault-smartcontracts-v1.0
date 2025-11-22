@@ -1,0 +1,69 @@
+{
+  "name": "sherpa-vault-smartcontracts",
+  "version": "1.0.0",
+  "description": "SherpaVault - Multi-chain DeFi vault system using Chainlink CCIP",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "hardhat clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hedgemonyxyz/sherpa-vault-smartcontracts.git"
+  },
+  "keywords": [
+    "defi",
+    "vault",
+    "chainlink",
+    "ccip",
+    "multichain"
+  ],
+  "author": "Hedgemony",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hedgemonyxyz/sherpa-vault-smartcontracts/issues"
+  },
+  "homepage": "https://github.com/hedgemonyxyz/sherpa-vault-smartcontracts#readme",
+  "resolutions": {
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-verify": "^2.0.14",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@types/node": "~18.18.14",
+    "chai": "^4.3.10",
+    "eslint": "^9.39.1",
+    "eslint-plugin-security": "^3.0.1",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.22.10",
+    "hardhat-contract-sizer": "^2.10.0",
+    "mocha": "^10.2.0",
+    "prettier": "^3.2.5",
+    "solhint": "^4.1.1",
+    "solidity-coverage": "^0.8.16",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4"
+  },
+  "engines": {
+    "node": ">=18.16.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "ethers": "^5.7.2"
+    }
+  },
+  "overrides": {
+    "ethers": "^5.7.2"
+  },
+  "dependencies": {
+    "@chainlink/contracts-ccip": "^1.6.1",
+    "dotenv": "^17.0.1"
+  }
+}

@@ -1,0 +1,33 @@
+# Echidna Configuration for SherpaVault
+# https://github.com/crytic/echidna
+
+# Test mode
+testMode: assertion  # Use assert() for failures
+# testLimit: 50000  # Number of test sequences (reduced from 100k for initial run)
+testLimit: 10000  # Start with 10k for faster iteration
+
+# Shrinking (simplification of failing sequences)
+shrinkLimit: 5000  # Attempts to minimize counterexample
+
+# Coverage guidance
+coverage: true
+corpusDir: "echidna-corpus"
+
+# Deployer and transaction senders
+deployer: "0x30000"  # Address that deploys contracts
+sender: ["0x10000", "0x20000", "0x30000"]  # User addresses for fuzzing
+
+# Transaction parameters
+seqLen: 100  # Sequence length (number of transactions per test)
+prefix: "contracts/"  # Where to find contracts
+
+# Optimization
+workers: 4  # Parallel workers (adjust based on CPU cores)
+
+# Output
+format: text
+quiet: false
+
+# Solidity compiler
+cryticArgs: ["--compile-force-framework", "foundry"]
+solcArgs: "--via-ir --optimize --optimizer-runs 200"
